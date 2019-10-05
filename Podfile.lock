@@ -1,0 +1,20 @@
+PODS:
+  - RxBluetoothKit (5.2.0):
+    - RxSwift (~> 4.5)
+  - RxSwift (4.5.0)
+
+DEPENDENCIES:
+  - RxBluetoothKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RxBluetoothKit
+    - RxSwift
+
+SPEC CHECKSUMS:
+  RxBluetoothKit: a490bd8cdf7ad592c409daf420a6314670fe5871
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+
+PODFILE CHECKSUM: a60cdba1ccc18aad755876647436a8e668a2c05f
+
+COCOAPODS: 1.6.1
