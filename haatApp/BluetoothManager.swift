@@ -1,0 +1,54 @@
+//
+//  CentralManager.swift
+//  haatApp
+//
+//  Created by Reza Madhavan on 11/3/19.
+//  Copyright © 2019 Reza Madhavan. All rights reserved.
+//
+
+import Foundation
+import CoreBluetooth
+import RxBluetoothKit
+
+class BluetoothManager{
+        
+    static let shared = BluetoothManager()
+    var options: [String:AnyObject]
+    var manager: CentralManager
+    
+        
+    init(){
+        options = [CBCentralManagerOptionRestoreIdentifierKey: "RestoreIdentifierKey"] as [String: AnyObject]
+        manager = CentralManager(queue: .main, options: options, onWillRestoreCentralManagerState: { restoredState in
+            let restoredPeripherals = restoredState.peripherals
+            let restoredScanOptions = restoredState.scanOptions
+            let restoredServices = restoredState.services
+        })
+    }
+        
+    func getDeviceList() -> [String: String]{
+        //manager.observeState()
+        //.startWith(state)
+        //.filter { $0 == .poweredOn }
+        //.flatMap { manager.scanForPeripherals(withService: [serviceId]) }
+        return ["test1": "1","test2": "2","test3": "3"]
+    }
+    
+    func connectDevice() -> String{
+        /*  manager.observestate()
+            .take(1)
+            .flatMap { $0.peripheral.establishConnection() }
+            .subscribe(onNext: { peripheral in
+                 print("Connected to: \(peripheral)")
+            })
+         */
+        return "Success"
+    }
+    
+    //add event listener for output (NSNotification)
+    
+    func readOutput() -> String{
+        return "123"
+    }
+        
+}

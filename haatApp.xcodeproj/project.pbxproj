@@ -15,6 +15,7 @@
 		F51ABB98234906CD0011CE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51ABB97234906CD0011CE5D /* Assets.xcassets */; };
 		F51ABB9B234906CD0011CE5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51ABB9A234906CD0011CE5D /* Preview Assets.xcassets */; };
 		F51ABB9E234906CD0011CE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51ABB9C234906CD0011CE5D /* LaunchScreen.storyboard */; };
+		F549383A236F6B91007D413D /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5493839236F6B91007D413D /* BluetoothManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F51ABB9A234906CD0011CE5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F51ABB9D234906CD0011CE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F51ABB9F234906CD0011CE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5493839236F6B91007D413D /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 				BC732B7FDD3A9A6BA0165747 /* Pods-haatApp.debug.xcconfig */,
 				270F089FB07F1F9E1A823572 /* Pods-haatApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,6 +87,7 @@
 				F51ABB8E234906CA0011CE5D /* AppDelegate.swift */,
 				F51ABB90234906CA0011CE5D /* SceneDelegate.swift */,
 				F51ABB95234906CA0011CE5D /* ContentView.swift */,
+				F5493839236F6B91007D413D /* BluetoothManager.swift */,
 				F51ABB97234906CD0011CE5D /* Assets.xcassets */,
 				F51ABB9C234906CD0011CE5D /* LaunchScreen.storyboard */,
 				F51ABB9F234906CD0011CE5D /* Info.plist */,
@@ -229,6 +231,7 @@
 				F51ABB8F234906CA0011CE5D /* AppDelegate.swift in Sources */,
 				F51ABB96234906CA0011CE5D /* ContentView.swift in Sources */,
 				F51ABB91234906CA0011CE5D /* SceneDelegate.swift in Sources */,
+				F549383A236F6B91007D413D /* BluetoothManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
