@@ -15,7 +15,7 @@ class BluetoothManager{
     static let shared = BluetoothManager()
     var options: [String:AnyObject]
     var manager: CentralManager
-    
+    var state: BluetoothState
         
     init(){
         options = [CBCentralManagerOptionRestoreIdentifierKey: "RestoreIdentifierKey"] as [String: AnyObject]
@@ -24,13 +24,14 @@ class BluetoothManager{
             let restoredScanOptions = restoredState.scanOptions
             let restoredServices = restoredState.services
         })
+        state = manager.state
     }
         
     func getDeviceList() -> [String: String]{
-        //manager.observeState()
-        //.startWith(state)
-        //.filter { $0 == .poweredOn }
-        //.flatMap { manager.scanForPeripherals(withService: [serviceId]) }
+//        manager.observeState()
+//        .startWith(state)
+//        .filter { $0 == .poweredOn }
+//        .flatMap { manager.scanForPeripherals(withService: [serviceId]) }
         return ["test1": "1","test2": "2","test3": "3"]
     }
     
