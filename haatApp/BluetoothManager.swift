@@ -28,13 +28,12 @@ class BluetoothManager{
     }
         
     func getDeviceList() -> [String: String]{
-//        manager.observeState()
-//        .startWith(state)
-//        .filter { $0 == .poweredOn }
-//        .flatMap { manager.scanForPeripherals(withServices: [ServiceId]) }
+        manager.observeState()
+        .startWith(state)
+        .filter { $0 == .poweredOn }
+        .take(1)
+        .flatMap { _ in self.manager.scanForPeripherals(withServices: nil) }
         return ["String": "Ok"]
-        
-        //afdsfad
     }
     
     func connectDevice() -> String{
