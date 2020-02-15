@@ -7,7 +7,7 @@ DEPENDENCIES:
   - RxBluetoothKit
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - RxBluetoothKit
     - RxSwift
 
@@ -17,4 +17,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: a60cdba1ccc18aad755876647436a8e668a2c05f
 
-COCOAPODS: 1.8.1
+COCOAPODS: 1.6.1

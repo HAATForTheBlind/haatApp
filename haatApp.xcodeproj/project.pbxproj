@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D7ADF6E6CCE05BD8ED3E2C29 /* Pods_haatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1E1AE289AF0363FB066A05 /* Pods_haatApp.framework */; };
 		F51ABB8F234906CA0011CE5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51ABB8E234906CA0011CE5D /* AppDelegate.swift */; };
 		F51ABB91234906CA0011CE5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51ABB90234906CA0011CE5D /* SceneDelegate.swift */; };
 		F51ABB94234906CA0011CE5D /* haatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F51ABB92234906CA0011CE5D /* haatApp.xcdatamodeld */; };
@@ -16,12 +15,10 @@
 		F51ABB9B234906CD0011CE5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51ABB9A234906CD0011CE5D /* Preview Assets.xcassets */; };
 		F51ABB9E234906CD0011CE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51ABB9C234906CD0011CE5D /* LaunchScreen.storyboard */; };
 		F549383A236F6B91007D413D /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5493839236F6B91007D413D /* BluetoothManager.swift */; };
+		F56D83AC23F868F8001643C0 /* NewBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D83AB23F868F8001643C0 /* NewBluetoothManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E1E1AE289AF0363FB066A05 /* Pods_haatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_haatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		270F089FB07F1F9E1A823572 /* Pods-haatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haatApp.release.xcconfig"; path = "Target Support Files/Pods-haatApp/Pods-haatApp.release.xcconfig"; sourceTree = "<group>"; };
-		BC732B7FDD3A9A6BA0165747 /* Pods-haatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haatApp.debug.xcconfig"; path = "Target Support Files/Pods-haatApp/Pods-haatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F51ABB8B234906CA0011CE5D /* haatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51ABB8E234906CA0011CE5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51ABB90234906CA0011CE5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +29,7 @@
 		F51ABB9D234906CD0011CE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F51ABB9F234906CD0011CE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5493839236F6B91007D413D /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		F56D83AB23F868F8001643C0 /* NewBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBluetoothManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,26 +37,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7ADF6E6CCE05BD8ED3E2C29 /* Pods_haatApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		542B45AF3D830B06CCA66A36 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1E1E1AE289AF0363FB066A05 /* Pods_haatApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E8F33CB868A1F5ABA99B8E05 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BC732B7FDD3A9A6BA0165747 /* Pods-haatApp.debug.xcconfig */,
-				270F089FB07F1F9E1A823572 /* Pods-haatApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -69,7 +56,6 @@
 				F51ABB8D234906CA0011CE5D /* haatApp */,
 				F51ABB8C234906CA0011CE5D /* Products */,
 				E8F33CB868A1F5ABA99B8E05 /* Pods */,
-				542B45AF3D830B06CCA66A36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +79,7 @@
 				F51ABB9F234906CD0011CE5D /* Info.plist */,
 				F51ABB92234906CA0011CE5D /* haatApp.xcdatamodeld */,
 				F51ABB99234906CD0011CE5D /* Preview Content */,
+				F56D83AB23F868F8001643C0 /* NewBluetoothManager.swift */,
 			);
 			path = haatApp;
 			sourceTree = "<group>";
@@ -112,11 +99,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F51ABBA2234906CD0011CE5D /* Build configuration list for PBXNativeTarget "haatApp" */;
 			buildPhases = (
-				304166E10669F5B8B93AE578 /* [CP] Check Pods Manifest.lock */,
 				F51ABB87234906CA0011CE5D /* Sources */,
 				F51ABB88234906CA0011CE5D /* Frameworks */,
 				F51ABB89234906CA0011CE5D /* Resources */,
-				156639C78811E6A5DD45C46D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,54 +158,13 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		156639C78811E6A5DD45C46D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-haatApp/Pods-haatApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-haatApp/Pods-haatApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-haatApp/Pods-haatApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		304166E10669F5B8B93AE578 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-haatApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		F51ABB87234906CA0011CE5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F51ABB94234906CA0011CE5D /* haatApp.xcdatamodeld in Sources */,
+				F56D83AC23F868F8001643C0 /* NewBluetoothManager.swift in Sources */,
 				F51ABB8F234906CA0011CE5D /* AppDelegate.swift in Sources */,
 				F51ABB96234906CA0011CE5D /* ContentView.swift in Sources */,
 				F51ABB91234906CA0011CE5D /* SceneDelegate.swift in Sources */,
@@ -358,7 +302,6 @@
 		};
 		F51ABBA3234906CD0011CE5D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC732B7FDD3A9A6BA0165747 /* Pods-haatApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,7 +322,6 @@
 		};
 		F51ABBA4234906CD0011CE5D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 270F089FB07F1F9E1A823572 /* Pods-haatApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

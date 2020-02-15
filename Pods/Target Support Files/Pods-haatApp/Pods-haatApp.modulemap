@@ -1,6 +1,0 @@
-framework module Pods_haatApp {
-  umbrella header "Pods-haatApp-umbrella.h"
-
-  export *
-  module * { export * }
-}

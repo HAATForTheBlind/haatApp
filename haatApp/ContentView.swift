@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     @State private var selection = 0
     var strings = ["one", "two", "three", "four", "five"]
@@ -25,6 +26,9 @@ struct ContentView: View {
                         Text("Third")
                     }
             }
+                .onAppear{
+                    var manager = BluetoothManager.shared
+                }
             .tag(2)
             Text("First Vieww")
                 .font(.title)
