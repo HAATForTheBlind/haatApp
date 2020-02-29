@@ -13,7 +13,7 @@ class BluetoothManager : NSObject, CBCentralManagerDelegate{
     
     static let shared = BluetoothManager()
     var manager: CBCentralManager!
-    
+    let haatService =  CBUUID(string: "FIX ME")
     func centralManagerDidUpdateState(_ central: CBCentralManager){
         switch central.state{
             
@@ -29,13 +29,18 @@ class BluetoothManager : NSObject, CBCentralManagerDelegate{
           print("central.state is .poweredOff")
         case .poweredOn:
           print("central.state is .poweredOn")
+          manager.scanForPeripherals(withServices: [haatService])
         }
+    }
+    
+    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        print(peripheral)
+        
     }
     
     override init() {
         super.init()
         manager = CBCentralManager(delegate: self, queue: nil)
-        print("hello world")
         
     }
     
